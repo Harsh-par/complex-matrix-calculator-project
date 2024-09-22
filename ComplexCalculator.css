@@ -1,0 +1,128 @@
+/* General Body Styling */
+/* Title Styling */
+#Title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000000; /* Red for the title text */
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f9ecef; /* Light red/white background */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(217, 83, 79, 0.2); /* Subtle shadow matching the red theme */
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#Title:hover {
+    box-shadow: 0 4px 10px rgba(217, 83, 79, 0.3); /* Enhanced shadow on hover */
+}
+
+@media (max-width: 550px) {
+    #Title {
+        font-size: 24px;
+        padding: 8px;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Light background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container for the calculator display */
+#CalculatorDisplay {
+    background-color: #ffe6e6; /* Light red/white background */
+    border: 2px solid #d9534f; /* Red border */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 530px;
+    text-align: center;
+    height: 520px;
+}
+
+#CalculatorInput input {
+    width:60px;
+    margin: 2px;
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #fff; /* White background for inputs */
+}
+
+#CalculatorInput {
+    margin-bottom: 20px;
+}
+
+/* Button styles */
+button {
+    background-color: #d9534f; /* Red background for buttons */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 30px 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #c9302c; /* Darker red on hover */
+}
+
+/* Styling the output section */
+#CalculatorOutput input {
+    width: 250px;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Light background for output fields */
+    font-weight: bold;
+    text-align: center;
+}
+
+#CalculatorOutput input[readonly] {
+    background-color: #f9ecef; /* Light red/white for read-only fields */
+    border: 1px solid #ccc;
+    cursor: not-allowed;
+}
+
+/* Styling for the output section labels */
+#CalculatorOutput {
+    margin-top: 40px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 550px) {
+    #CalculatorDisplay {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #CalculatorInput input, #CalculatorOutput input {
+        width: 130px;
+    }
+
+    button {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
